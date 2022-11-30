@@ -23,6 +23,10 @@ public class Basket {
         return buy;
     }
 
+    public void clear() {
+        basket.clear();
+    }
+
     public void removeBasket(Products products) {
         basket.remove(products);
     }

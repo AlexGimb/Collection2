@@ -1,8 +1,8 @@
 public class ValidationUtils {
 
-    public static String ValidationString(String value) {
+    public static String ValidationString(String value,String defaultValue) {
         if (value == null || value.isEmpty() || value.isBlank()) {
-            throw new IllegalArgumentException("Заполните карточку товара полностью");
+            throw new IllegalArgumentException(defaultValue);
         } else {
             return value;
         }

@@ -4,7 +4,7 @@ public class Products {
     private double cost;
     private int amount;
     public Products(String name, double cost, int amount) {
-        this.name = ValidationUtils.ValidationString(name);
+        this.name = ValidationUtils.ValidationString(name,"Заполните карточку товара полностью");
         setCost(cost);
         setAmount(amount);
     }
