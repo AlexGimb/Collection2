@@ -11,9 +11,10 @@ public class Main {
         Products kolbasa = new Products("Колбаса", 170.00, 1);
         Products syr = new Products("Сыр", 89.00, 2);
         Products lapsha = new Products("Лапша", 46.00, 1);
+        Products lap = new Products("Лапша", 46.00, 2);
 
         Basket basket = new Basket();
-        basket.addAllBasket(new Products("Пиво",120.00,4),moloko, hleb, myaso, syr, lapsha);
+        basket.addAllBasket(new Products("Пиво",120.00,4),moloko, hleb, myaso, syr, lapsha,lap);
         System.out.println("------------------------------------------------------------------------------------------");
 
         System.out.println(basket.toString());

@@ -23,17 +23,20 @@ public class Products {
     public void setAmount(int amount) {
         this.amount = ValidationUtils.ValidationInt(amount);
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Products products = (Products) o;
-        return Double.compare(products.cost, cost) == 0 && amount == products.amount && Objects.equals(name, products.name);
+        return Double.compare(products.cost, cost) == 0 && Objects.equals(name, products.name);
     }
+
     @Override
     public int hashCode() {
-        return Objects.hash(name, cost, amount);
+        return Objects.hash(name, cost);
     }
+
     @Override
     public String toString() {
         return "\n" + name + " - количество:" + amount + ",,  цена:" + cost * amount + " руб.";
