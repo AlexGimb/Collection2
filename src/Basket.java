@@ -3,7 +3,7 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 public class Basket {
-    Set<Products> basket = new HashSet<>();
+    private final Set<Products> basket = new HashSet<>();
     public void addAllBasket(Products... products) {
         for (Products product : products) {
             addBasket(product);

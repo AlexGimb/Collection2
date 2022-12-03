@@ -4,9 +4,9 @@ import java.util.Objects;
 import java.util.Set;
 
 public class Recipe {
-    private String nameRecipe;
+    private final String nameRecipe;
     private double price;
-    Products[] products;
+    private final Products[] products;
     public static Set<Recipe> recipes = new HashSet<>();
 
     public Recipe(String nameRecipe, Products... products) {

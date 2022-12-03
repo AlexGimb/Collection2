@@ -3,7 +3,7 @@ import java.util.Random;
 import java.util.Set;
 
 public class SetOfInteger {
-    static Set<Integer> integers = new HashSet<>();
+    private final static Set<Integer> integers = new HashSet<>();
 
     public static void addInt() {
         Random random = new Random();
